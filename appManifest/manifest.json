@@ -29,9 +29,29 @@
       "canUpdateConfiguration": true,
       "commands": [
         {
-          "id": "searchQuery",
+          "id": "heroCardSearch",
           "type": "query",
-          "title": "Search",
+          "title": "Hero",
+          "description": "Test command to run query",
+          "initialRun": false,
+          "fetchTask": false,
+          "context": [
+            "compose",
+            "commandBox"
+          ],
+          "parameters": [
+            {
+              "name": "searchQuery",
+              "title": "Search Query",
+              "description": "Your search query",
+              "inputType": "text"
+            }
+          ]
+        },
+        {
+          "id": "adaptiveCardSearch",
+          "type": "query",
+          "title": "Adaptive",
           "description": "Test command to run query",
           "initialRun": false,
           "fetchTask": false,
